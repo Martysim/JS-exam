@@ -3,15 +3,13 @@
 const arrStrgs = ["one", "dog", "text", "Wednesday", "unlock"];
 
 function stringLenght (arr) {
-    let greaterFive= "";
-    let HowManyTimes = 0;
-    for(str of arr){
-        if (str.length > 5){
-            greaterFive += str + " ";
-            HowManyTimes ++
-        }
-    }
-    return HowManyTimes;
-}
+    let result = 0;
+    for (str of arr) {
+        if (str.length > 5) {
+            result ++;
+        };
+    };
+    return result;
+};
 
 console.log(stringLenght(arrStrgs));
