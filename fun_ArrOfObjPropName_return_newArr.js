@@ -18,5 +18,3 @@ let arrObj = [
   
   };
   result = [1, 4, 7];
-
-  
