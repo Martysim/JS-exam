@@ -11,3 +11,8 @@ function objInArr (obj) {
 }
 
 console.log(objInArr(obj));
+
+
+
+
+

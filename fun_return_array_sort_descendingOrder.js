@@ -1,11 +1,12 @@
 // Write a function that takes in an array of numbers and returns a new array with all the numbers sorted in descending order
 
 
-const number = [4,5,3,7,8,1,2 ];
+const numbers = [ 4, 5, 3, 7, 8, 1, 2 ];
 
 function arraySort (arr) {
-    return arr.sort();
-
+    const copyArray = [...arr];
+    return copyArray.sort().reverse();
 };
 
-console.log(arraySort(number));
+console.log(arraySort(numbers));
+console.log(numbers);
