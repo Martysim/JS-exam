@@ -8,6 +8,6 @@ const obj = {
 
 function objInArr (obj) {
     return Object.getOwnPropertyNames(obj);
-}
+};
 
 console.log(objInArr(obj));
