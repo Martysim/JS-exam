@@ -25,6 +25,3 @@ console.log(getPropertyValues(arrOfObj3, "age"));
 console.log(getPropertyValues(arrOfObj3, "name"));
 
 
-function getOwnProperty (arr) {
-    
-}
