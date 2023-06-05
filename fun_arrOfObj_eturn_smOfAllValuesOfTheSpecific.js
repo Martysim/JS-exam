@@ -12,19 +12,19 @@ const arrOfObj2 = [
     }  
 ];
 
-function sumOfValuesOfTheSpecific(arrObj, key) {
+function sumOfValuesOfTheSpecific (arrObj, key) {
     let result = [];
     for (var i = 0; i < arrObj.length; i++) {
         result.push(arrObj[i][key]);
       };
-    let sumOfNumber = result.reduce( function(sum, num) {
-        return sum + num;
+    let sumOfNumber = result.reduce( function(sum, num) {  
+      return sum + num;
       }, 0);
     return sumOfNumber;
   };
+// num [prop]
 
-
-console.log("Решение със .reduse");
+console.log("Решение със .reduse()");
 console.log(sumOfValuesOfTheSpecific(arrOfObj2, "prop"));
 
 
@@ -40,5 +40,26 @@ function sumOfValuesOfTheSpecific2 (arrObj, key) {
     return sum;
   };
 
-console.log("Решение със .forEach");
+console.log("Решение със .forEach()");
 console.log(sumOfValuesOfTheSpecific2(arrOfObj2, "prop"));
+
+
+// ugrade exersice with .reduce()
+
+
+function sumOfValuesOfTheSpecific3 (arrObj, key) {
+
+  let sumOfNumber = arrObj.reduce( function(sum, num) {  
+    return sum + num[key];
+    }, 0);
+
+  return sumOfNumber;
+};
+
+console.log("Подобрено решение със .reduce()");
+console.log(sumOfValuesOfTheSpecific3(arrOfObj2, "prop"));
+
+
+
+
+

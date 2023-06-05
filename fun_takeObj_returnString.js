@@ -22,16 +22,18 @@ console.log(objInString(objS));
 
 
 
+// <<<<<<< exersice-4.1
 
-// function formatObject(obj) {
-//     let result = "";
-//     for (let key in obj) {
-//       if (obj.hasOwnProperty(key)) {
-//         result += `${key}: ${obj[key]}\n`;
-//       }
-//     }
-//     return result;
-//   }
-  
+// // function formatObject(obj) {
+// //     let result = "";
+// //     for (let key in obj) {
+// //       if (obj.hasOwnProperty(key)) {
+// //         result += `${key}: ${obj[key]}\n`;
+// //       }
+// //     }
+// //     return result;
+// //   }
+
+// >>>>>>> main
   
   
