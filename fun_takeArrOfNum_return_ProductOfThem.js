@@ -29,7 +29,7 @@ function productOfNumInArr2 (arr) {
 console.log(productOfNumInArr2(arr2));
 
 
-// for cikul
+// for 
 
 const arr3 = [3, 4, 5];
 function productOfNumInArr3 (arr) {
