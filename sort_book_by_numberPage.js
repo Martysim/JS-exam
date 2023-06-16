@@ -20,9 +20,8 @@ const arrOfBookObj = [
 
 
 
-const sortBookByPages = () => {
-    let sortedArr;
-    return sortedArr = arrOfBookObj.sort( (a, b) => a.numberOfPages - b.numberOfPages )
+const sortBookByPages = (arrBook) => {
+    return arrBook.sort((a, b) => a.numberOfPages - b.numberOfPages);
 };
 
 console.log(sortBookByPages(arrOfBookObj));

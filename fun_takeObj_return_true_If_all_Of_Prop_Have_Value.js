@@ -5,7 +5,7 @@ console.log("------------------------------------------------------");
 const objValueT = {
     prop1: 1,
     prop2: 2,
-    prop3: 3 
+    prop3: 3
 };
 const objValueF = {
     prop1: 1,
@@ -13,8 +13,8 @@ const objValueF = {
     prop3: undefined
 };
 
-function checkPropValue (obj) {
-    for (let value in obj ){
+function checkPropValue(obj) {
+    for (let value in obj) {
         if (obj.hasOwnProperty(value) && obj[value] === undefined) {
             return false;
         };

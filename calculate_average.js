@@ -2,7 +2,7 @@
 
 const arrOfNums = [2, 3, 5, 2];
 
-function calculateAvg (arr) {
+function calculateAvg(arr) {
     let sum = 0;
     for (num of arr) {
         sum += num;
@@ -18,12 +18,12 @@ console.log(calculateAvg(arrOfNums));
 
 console.log(".reduce()");
 
-function calculateAvg2 (arr) {
+function calculateAvg2(arr) {
     let sum = 0;
     let result = 0;
     result = arr.reduce((sum, num) => {
-        sum += num; 
-        return sum; 
+        sum += num;
+        return sum;
     });
     return result / arr.length;
 };
@@ -34,10 +34,10 @@ console.log(calculateAvg2(arrOfNums));
 
 console.log(".foreach()");
 
-function calculateAvg3 (arr) {
+function calculateAvg3(arr) {
 
     let result = 0;
-    arr.forEach( function (num) {
+    arr.forEach(function (num) {
         result += num;
     });
     return result / arr.length;
@@ -46,7 +46,3 @@ function calculateAvg3 (arr) {
 console.log(calculateAvg3(arrOfNums));
 
 
-// numbers.forEach(function(number) {
-//     sum += number;
-//     count++;
-//   });
