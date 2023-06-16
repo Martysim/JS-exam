@@ -3,7 +3,7 @@
 
 const arrOfStrL = ["m", "ma", "mar", "marto", "Martin"];
 
-function arrOfStrReturnLongStr (arrStr) {
+function arrOfStrReturnLongStr(arrStr) {
     let longestStr = "";
     for (let str of arrStr) {
         if (str.length > longestStr.length) {
@@ -15,10 +15,10 @@ function arrOfStrReturnLongStr (arrStr) {
 
 console.log(arrOfStrReturnLongStr(arrOfStrL));
 
-function arrOfStrReturnLongStr2 (arrStr) {
+function arrOfStrReturnLongStr2(arrStr) {
 
-    const reducer = (longestStr , currentStr) => {
-        if (currentStr.length > longestStr.length ) {
+    const reducer = (longestStr, currentStr) => {
+        if (currentStr.length > longestStr.length) {
             longestStr = currentStr;
         };
         return longestStr;
@@ -32,9 +32,9 @@ console.log(arrOfStrReturnLongStr2(arrOfStrL));
 
 
 
-function arrOfStrReturnLongStr3 (arrStr) {
+function arrOfStrReturnLongStr3(arrStr) {
 
-    return arrStr.reduce((longestStr , currentStr) => {
+    return arrStr.reduce((longestStr, currentStr) => {
         if (currentStr.length > longestStr.length) {
             longestStr = currentStr;
         };
